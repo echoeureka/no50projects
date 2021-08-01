@@ -2,6 +2,7 @@ import { defineComponent, onMounted } from 'vue'
 import './index.css'
 
 export default defineComponent({
+  name: 'ExpandingCards',
   setup() {
     onMounted(() => {
       const panels = document.querySelectorAll('.panel')
