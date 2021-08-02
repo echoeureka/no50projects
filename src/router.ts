@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from './App'
 import ExpandingCards from './views/expanding-cards'
+import Home from './views/Home'
 import ProgressSteps from './views/progress-steps'
+import RotatingNavigationAnimation from './views/rotating-navigation-animation'
 
 const routes = [
-  { path: '/', component: App },
+  { path: '/', component: Home },
   { path: '/expanding-cards', component: ExpandingCards },
-  { path: '/progress-steps', component: ProgressSteps }
+  { path: '/progress-steps', component: ProgressSteps },
+  {
+    path: '/rotating-navigation-animation',
+    component: RotatingNavigationAnimation
+  }
 ]
 const router = createRouter({
   history: createWebHistory(),
